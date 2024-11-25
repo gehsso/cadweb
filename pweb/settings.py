@@ -113,12 +113,12 @@ AUTH_PASSWORD_VALIDATORS = [
 # definie o formato da data dd/mm/yyyy
 LANGUAGE_CODE = 'pt-br'
 TIME_ZONE = 'America/Fortaleza'
-USE_I18N = True
-USE_TZ = False
+USE_I18N = True # Habilita o suporte a internacionalização
+USE_TZ = False # se True todas as datas e horas são armazenadas no banco de dados em UTC
 # formatação de números e valores monetários de acordo com a localização (localização regional) da aplicação.
 USE_L10N = True #Habilita a localização (l10n = localization) no Django, ou seja, 
 #faz com que o Django ajuste a formatação de datas, números e outros formatos com base no idioma 
-USE_THOUSAND_SEPARATOR = True #Define se o Django deve usar o separador de milhar ao renderizar números.
+USE_THOUSAND_SEPARATOR = True # Define se o Django deve usar o separador de milhar ao renderizar números.
 DECIMAL_SEPARATOR = ',' #Especifica o caractere que deve ser usado como separador decimal ao formatar números.
 THOUSAND_SEPARATOR = '.' #Define o separador de milhar a ser usado. Aqui, o ponto . será usado como separador de milhar, por exemplo, 1.234.567.
 
