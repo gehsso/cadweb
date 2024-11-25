@@ -129,8 +129,8 @@ THOUSAND_SEPARATOR = '.' #Define o separador de milhar a ser usado. Aqui, o pont
 #STATIC_URL = 'static/'
 #STATICFILES_DIRS = [BASE_DIR / 'static']
 
-STATIC_URL = 'static/' # nome para a URL  para servir arquivos estáticos
-STATIC_ROOT = BASE_DIR / 'staticfiles'
+STATIC_URL = 'static/' # nome usado na URL para referenciar arquivos estáticos
+#STATIC_ROOT = BASE_DIR / 'staticfiles'
 STATICFILES_DIRS = [BASE_DIR / 'static']
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
