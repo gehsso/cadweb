@@ -12,8 +12,7 @@
     <link href="{% static 'css/style.css' %}" rel="stylesheet" >
     
     <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-confirmation2/4.2.0/bootstrap-confirmation.min.js"></script>
-    
+     
 </head>
 <body>
      
@@ -38,6 +37,10 @@
                 <a class="navbar-brand ms-3" href="#">Dashboard</a>
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <span class="nav-link" >{{ data_atual|date:"d/m/Y" }}</span>
+                        </li>
+                       
                         <li class="nav-item">
                             <a class="nav-link" href="#"><i class="fas fa-envelope"></i></a>
                         </li>
@@ -149,3 +152,6 @@
     
 </body>
 </html>
+
+
+

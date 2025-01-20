@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+{% block titulo_conteudo %} Formulário de Clientes {% endblock titulo_conteudo %}
+
+{% block conteudo %} 
+<form method="post">
+    {% csrf_token %}    
+    {{ form.as_p }}
+    <button class="btn btn-primary btn-sm" type="submit">Salvar</button>
+</form>
+{% endblock conteudo %}
+
+{% block javascript %}
+{% endblock javascript %}

@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+
+{% block titulo  %} Contato {% endblock %}
+
+{% block titulo_conteudo %} Detalhes da Categoria {% endblock %}
+
+
+
+{% block conteudo  %}  
+
+   
+
+<p>
+   <label >ID:</label><br>
+   <span class="form-control">{{categoria.id}}</span>
+  
+</p>
+
+<p>
+   <label >Nome:</label><br>
+   <span class="form-control">{{categoria.nome}}</span>
+</p>
+
+<p>
+   <label >Ordem:</label><br>
+   <span class="form-control">{{categoria.ordem}}</span>
+</p>
+
+
+
+{% endblock %}
