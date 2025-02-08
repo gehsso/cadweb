@@ -30,4 +30,11 @@ urlpatterns = [
     path('teste2/', views.teste2, name='teste2'),
     path('teste3/', views.teste3, name='teste3'),
     
-]
+    path('pedido/', views.pedido, name='pedido'),
+    path('detalhes_pedido/<int:id>/', views.detalhes_pedido, name='detalhes_pedido'),
+    path('novo_pedido/<int:id>/',views.novo_pedido, name='novo_pedido'),
+    path('editar_item_pedido/<int:id>/',views.editar_item_pedido, name='editar_item_pedido'),
+    path('remover_item_pedido/<int:id>/',views.remover_item_pedido, name='remover_item_pedido'),
+    path('form_pagamento/<int:id>/', views.form_pagamento, name='form_pagamento'),
+    path('nota_fiscal/<int:id>/', views.nota_fiscal, name='nota_fiscal'), 
+]   
